@@ -5,7 +5,7 @@ jpa:
   properties:
     hibernate:
       dialect: org.hibernate.dialect.MySQLDialect
-      ddl-auto: update
+      #ddl-auto: update
 
 server:
   port: 0
