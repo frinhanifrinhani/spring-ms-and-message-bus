@@ -24,15 +24,15 @@ public class Card {
     @Column
     private BigDecimal income;
     @Column
-    private BigDecimal cardlimit;
+    private BigDecimal cardLimit;
 
     public Card(String name,
                 CardFlag flag,
                 BigDecimal income,
-                BigDecimal cardlimit) {
+                BigDecimal cardLimit) {
         this.name = name;
         this.flag = flag;
         this.income = income;
-        this.cardlimit = cardlimit;
+        this.cardLimit = cardLimit;
     }
 }

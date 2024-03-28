@@ -11,9 +11,9 @@ public class SaveCardRequest {
     private String name;
     private CardFlag flag;
     private BigDecimal income;
-    private BigDecimal cardlimit;
+    private BigDecimal cardLimit;
 
     public Card toModel(){
-        return new Card(name, flag, income, cardlimit);
+        return new Card(name, flag, income, cardLimit);
     }
 }
