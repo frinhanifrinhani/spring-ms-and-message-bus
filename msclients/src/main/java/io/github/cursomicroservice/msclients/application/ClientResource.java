@@ -3,6 +3,7 @@ package io.github.cursomicroservice.msclients.application;
 import io.github.cursomicroservice.msclients.application.representation.ClientSaveRequest;
 import io.github.cursomicroservice.msclients.domain.Client;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,18 +16,15 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("clients")
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
+@Slf4j
 public class ClientResource {
 
-    @Autowired
     private final ClientService service;
-
-    private ClientResource(ClientService service) {
-        this.service = service;
-    }
 
     @GetMapping
     public String status() {
+        log.info("Obtentdo o status do msclientes");
         return "OK";
     }
 
